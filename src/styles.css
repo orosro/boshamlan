@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+
+@theme {
+
+    --paper-bg: #FFF;
+
+    /* Custom colors */
+    --color-primary-main: #3A7BB7;
+    --color-primary-light: #E8F0F7;
+    --color-accent-primary-light: #BED2E4;
+    --color-fnt-title: #242424;
+    --color-fnt-normal: #2E6190;
+    --color-fnt-blue: #556885;
+    --color-ds-page-bg: #F5F7F9;
+    --color-ds-stroke: #DCDCDC;
+
+    --color-paper: var(--paper-bg);
+
+    --shadow-popover: 0 2px 12px #2424241F;
+}
