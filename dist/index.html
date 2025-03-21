@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boshamlan</title>
+    <script type="module" crossorigin src="/assets/index-RlEpkEEm.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DYutKwse.css">
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white p-4 shadow shadow-lg">
+      <div class="flex items-center justify-center">
+        <img
+          src="https://www.boshamlan.com/images/logo-ar-desktop-hd.svg"
+          alt="Logo"
+          height="44px"
+          width="156px"
+        />
+
+        <button class="text-gray-500 hover:text-gray-700 absolute right-4">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 24V21.3333H28V24H4ZM4 17.3333V14.6667H28V17.3333H4ZM4 10.6667V8H28V10.6667H4Z"
+              fill="#556885"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center p-4">
+      <div class="w-full max-w-md">
+        <div class="searchInput"></div>
+
+        <!-- Dropdown -->
+        <div class="formControl mb-6">
+          <div
+            class="flex w-full px-3 py-2 h-[50px] items-center border border-ds-stroke rounded-[40px] focus-within:border-transparent focus-within:ring-2 focus-within:ring-primary-main color-fnt-blue"
+          >
+            <input
+              id="Select"
+              type="text"
+              placeholder="اكتب البحث هنا"
+              class="grow outline-none"
+            />
+            <!--          <select class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">-->
+            <select id="Select" class="grow outline-none sr-only">
+              <option>نوع العقار</option>
+              <option>شقة</option>
+              <option>فيلا</option>
+              <option>أرض</option>
+            </select>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="formControl mb-6">
+          <div
+            class="inline-flex border border-gray-300 h-[50px] rounded-[40px] overflow-hidden w-full p-1 justify-around justify-items-stretch"
+          >
+            <label
+              class="flex flex-1 justify-center px-6 py-2 cursor-pointer transition-colors duration-200 rounded-[40px] has-[:checked]:border has-[:checked]:border-primary-main has-[:checked]:bg-primary-light has-[:checked]:text-primary-main has-[:checked]:font-bold"
+            >
+              <input
+                type="radio"
+                name="propertyType"
+                value="rent"
+                class="hidden"
+                checked
+              />
+              <span class="text-sm">للايجار</span>
+            </label>
+            <label
+              class="flex flex-1 justify-center px-6 py-2 cursor-pointer transition-colors duration-200 rounded-[40px] has-[:checked]:border has-[:checked]:border-primary-main has-[:checked]:bg-primary-light has-[:checked]:text-primary-main has-[:checked]:font-bold"
+            >
+              <input
+                type="radio"
+                name="propertyType"
+                value="rent"
+                class="hidden"
+              />
+              <span class="text-sm">للبدل</span>
+            </label>
+            <label
+              class="flex flex-1 justify-center px-6 py-2 cursor-pointer transition-colors duration-200 rounded-[40px] has-[:checked]:border has-[:checked]:border-primary-main has-[:checked]:bg-primary-light has-[:checked]:text-primary-main has-[:checked]:font-bold"
+            >
+              <input
+                type="radio"
+                name="propertyType"
+                value="rent"
+                class="hidden"
+              />
+              <span class="text-sm">للبيع</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          class="w-full rounded-[40px] bg-primary-main text-white p-3 transition cursor-pointer"
+        >
+          بحث
+        </button>
+      </div>
+    </main>
+
+    <!-- Skyline at the Bottom -->
+    <footer class="skyline-bg"></footer>
+
+  </body>
+</html>
