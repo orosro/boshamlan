@@ -11,7 +11,6 @@ interface FormControlSelectProps {
     selectedOptions: Option[];
     onChange: (selected: Option[]) => void;
     placeholder?: string;
-    className?: string;
 }
 
 function createPill(option: Option, onRemove: (option: Option, pill: HTMLElement) => void): HTMLElement {
@@ -44,7 +43,6 @@ function createFormControlSelect({
     selectedOptions,
     onChange,
     placeholder = "اكتب البحث هنا",
-    className = ""
 }: FormControlSelectProps): HTMLElement {
     const formControl = document.createElement('div');
     formControl.className = "formControl_combobox mb-4";

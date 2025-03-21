@@ -20,3 +20,10 @@
 
     --shadow-popover: 0 2px 12px #2424241F;
 }
+
+.skyline-bg {
+    background-image: url("https://www.boshamlan.com/images/home-hero-desktop-hd.svg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
